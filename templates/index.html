@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        .hero.is-medium {
+            position: relative;
+            color: white;
+        }
+        .hero.is-medium::before {
+            content: "";
+            background: url('static/images/presentacion.jpg') center center;
+            background-size: cover;
+            opacity: 0.5;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 0;
+        }
+        .hero-body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        .hero-title, .hero-subtitle {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .navbar-item img {
+            max-height: 64px; /* Doble del tamaño predeterminado */
+        }
+        .navbar-menu {
+            justify-content: center; /* Centrar el menú */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <div id="navbar" class="navigation py-4">
+        <div class="container">
+             <nav class="navbar">
+                 <div class="navbar-brand">
+                     <a class="navbar-item" href="index.html">
+                         <img src="./static/images/logo2.png" alt="logo">
+                     </a>
+                     <button role="button" class="navbar-burger burger" data-hidden="true" data-target="navigation">
+                         <span aria-hidden="true"></span>
+                         <span aria-hidden="true"></span>
+                         <span aria-hidden="true"></span>
+                     </button>
+                 </div>
+
+                 <div class="navbar-menu" id="navigation">
+                     <ul class="navbar-start ml-auto">
+                         <li class="navbar-item">
+                             <a class="navbar-item" href="index.html">Home</a>
+                         </li>
+
+                         <li class="navbar-item">
+                             <a class="navbar-item" href="about.html">About</a>
+                         </li>
+
+                         <li class="navbar-item">
+                             <a class="navbar-item" href="services.html">Service</a>
+                         </li>
+                     </ul>
+                 </div>
+             </nav>
+        </div>
+     </div>
+
+    <!-- Encabezado con imagen de presentación -->
+    <section class="hero is-medium">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title hero-title">
+                    Welcome to My Website
+                </h1>
+                <h2 class="subtitle hero-subtitle">
+                    Learn more about us and our services.
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido principal -->
+    <section class="section">
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>My Website</strong> by Your Name
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
